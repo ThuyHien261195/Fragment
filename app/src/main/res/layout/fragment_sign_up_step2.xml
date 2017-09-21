@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_seek_bar_value" />
+
+    <include layout="@layout/partial_seek_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_vertical"
+        android:text="@string/title_sport" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_vertical"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/chk_football"
+                android:text="@string/title_chk_football" />
+
+            <CheckBox
+                android:id="@+id/chk_tennis"
+                android:text="@string/title_chk_tennis" />
+
+            <CheckBox
+                android:id="@+id/chk_ping_pong"
+                android:text="@string/title_chk_ping_pong" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="@dimen/spacing_vertical">
+
+            <CheckBox
+                android:id="@+id/chk_swimming"
+                android:text="@string/title_chk_swimming" />
+
+            <CheckBox
+                android:id="@+id/chk_volleyball"
+                android:text="@string/title_chk_volleyball" />
+
+            <CheckBox
+                android:id="@+id/chk_basketball"
+                android:text="@string/title_chk_basketball" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_done"
+        style="@style/CommonButtonTheme"
+        android:text="@string/action_done" />
+</LinearLayout>
